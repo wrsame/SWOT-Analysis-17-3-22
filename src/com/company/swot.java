@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class swot {
@@ -22,7 +23,7 @@ public class swot {
   }
 
 
-  public void userInput(){
+  public static void userInput(){
     Scanner in = new Scanner(System.in);
    // Strengths
     System.out.println("To do the analysis, you must answer the statements");
@@ -38,7 +39,7 @@ public class swot {
     String wk1 = in.nextLine();
     String wk2 = in.nextLine();
     String wk3 = in.nextLine();
-    String swk4 = in.nextLine();
+    String wk4 = in.nextLine();
    //Opportunities
     System.out.println("OPPORTUNITIES");
     System.out.println("TYPE OUT 4 OPPPORTUNTIES YOUR TEAM/COMPANY HAS");
@@ -54,6 +55,18 @@ public class swot {
     String thr3 = in.nextLine();
     String thr4 = in.nextLine();
 
+    //Print out the informations
+    System.out.println("Results:");
+    System.out.println("\n\nSTRENGTHS");
+    System.out.printf("%s\n%s\n%s\n%s",sth1,sth2,sth3,sth4);
+    System.out.println("\n\n\n\nWEAKNESS");
+    System.out.printf("%s\n%s\n%s\n%s",wk1,wk2,wk3,wk4);
+    System.out.println("\n\n\n\nOPPORTUNITES");
+    System.out.printf("%s\n%s\n%s\n%s",op1,op2,op3,op4);
+    System.out.println("\n\n\n\nTHREADS");
+    System.out.printf("%s\n%s\n%s\n%s",op1,op2,op3,op4);
+
+
 
 
 
@@ -63,7 +76,6 @@ public class swot {
   }
 
 
-  //Print out the informations
 
 
 
